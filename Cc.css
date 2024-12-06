@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Contacto</title>
+    <style>
+      fieldset {
+        width: 450px;
+        border: 3px solid #000;
+        margin: 20px;
+        padding: 8px;
+      }
+    </style>
+    <center>
+      <fieldset>
+        <h1>Contactate con nosotros</h1>
+        <p>¡Estamos Aquí para Ayudarte!</p>
+
+        <form action="/submit" method="post">
+          <label for="name">Nombre Completo:</label>
+          <input
+            type="text"
+            id="name"
+            name="Name"
+            placeholder="Tu nombre aquí"
+          />
+          <br /><br />
+
+          <label for="email">Dirección de correo:</label>
+          <input type="email" id="email" name="email" />
+          <br /><br />
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required> </textarea>
+          <br /><br />
+
+          <button type="button">Enviar</button>
+        </form>
+      </fieldset>
+    </center>
+  </head>
+</html>
